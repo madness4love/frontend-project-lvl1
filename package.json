@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/madness4love/frontend-project-lvl1#readme",
   "dependencies": {
+    "readline-sync": "^1.4.10",
     "sloc": "^0.2.1",
     "source-map": "^0.7.3"
   },
