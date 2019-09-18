@@ -4,10 +4,15 @@
   "description": "brain games project",
   "main": "index.js",
   "bin": {
-    "brain-games": "./src/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-map inline",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +25,9 @@
   },
   "homepage": "https://github.com/madness4love/frontend-project-lvl1#readme",
   "dependencies": {
-    "sloc": "^0.2.1"
+    "@babel/preset-env": "^7.6.0",
+    "sloc": "^0.2.1",
+    "source-map": "^0.7.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
