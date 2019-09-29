@@ -5,4 +5,6 @@ start:
 publish:
 	npm publish --dry-run
 edit:
-	nano ./src/bin/brain-games.js
+	vim ./src/bin/brain-games.js
+lint:
+	npx eslint .

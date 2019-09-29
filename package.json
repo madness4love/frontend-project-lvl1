@@ -25,15 +25,21 @@
   },
   "homepage": "https://github.com/madness4love/frontend-project-lvl1#readme",
   "dependencies": {
+    "loadsh": "0.0.4",
     "readline-sync": "^1.4.10",
     "sloc": "^0.2.1",
     "source-map": "^0.7.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.0",
-    "@babel/core": "^7.6.0",
-    "@babel/node": "^7.6.1",
-    "@babel/preset-env": "^7.6.0",
-    "babel-preset-env": "^1.7.0"
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.15.0"
   }
 }
