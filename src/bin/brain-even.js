@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import {welcome, hello, iter, question } from '..';
+import { welcome, game } from '..';
 
 welcome();
-question();
+game();
