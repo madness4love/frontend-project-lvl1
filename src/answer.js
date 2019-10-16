@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const answer = () => {
+export default () => {
   const ans = readlineSync.question('Your answer: ');
   return ans;
 };

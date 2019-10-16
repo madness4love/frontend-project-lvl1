@@ -1,1 +1,1 @@
-export const identity = v => v;
+export default v => v;

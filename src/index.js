@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { greeting } from './greeting';
-import { answer } from './answer';
-import { identity } from './identity';
+import greeting from './greeting';
+import answer from './answer';
+import identity from './identity';
 
 export default readlineSync;
 // rules
