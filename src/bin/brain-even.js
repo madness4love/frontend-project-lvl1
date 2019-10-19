@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-import { welcome, game } from '..';
+import { rule, game } from '../games/brain-even-game';
+import welcome from '../common-func/welcome';
 
 welcome();
+rule();
 game();
