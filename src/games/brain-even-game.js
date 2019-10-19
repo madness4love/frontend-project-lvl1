@@ -1,6 +1,7 @@
 import greeting from '../common-func/greeting';
 import answer from '../common-func/answer';
 import identity from '../common-func/identity';
+import randomNum from '../common-func/randomNum';
 
 // rules
 export const rule = () => {
@@ -17,7 +18,7 @@ export const game = () => {
   console.log(`Hello, ${name}`);
 
   for (let i = 1; i < 4; i += 1) {
-    const randomNum = Math.ceil(Math.random() * 10);
+    randomNum();
     console.log(`Question: ${randomNum}`);
     const ans = identity(answer());
     if (`${ans}` === isEven(randomNum)) {
