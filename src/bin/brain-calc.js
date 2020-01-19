@@ -7,7 +7,15 @@ import getRandomOperand from '../common-func/randomOperand';
 
 const rule = 'What is the result of the expression?';
 const getRightAnswer = (randNum1, operator, randNum2) => {
-  return eval(`${randNum1} ${operator} ${randNum2}`);
+  switch (operator) {
+    case '+':
+      return randNum1 + randNum2;
+    case '-':
+      return randNum1 - randNum2;
+    case '*':
+      return randNum1 * randNum2;
+    default:
+  }
 };
 
 const getGameData = () => {

@@ -23,6 +23,6 @@ export default (gameDataPair, rule) => {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${isRightAnswer}.\nLet's try again, ${userName}!`);
       return;
     }
-    console.log(`Congradulation, ${userName}!`);
   }
+  console.log(`Congradulation, ${userName}!`);
 };

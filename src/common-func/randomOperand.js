@@ -6,14 +6,10 @@ export default () => {
   let index = identity(randomNum());
   if (index < 4 || index === 0) {
     index = '+';
-    return index;
-  }
-  if (index >= 4 && index < 7) {
+  } else if (index >= 4 && index < 7) {
     index = '-';
-    return index;
-  }
-  if (index >= 7) {
+  } else {
     index = '*';
-    return index;
   }
+  return index;
 };
