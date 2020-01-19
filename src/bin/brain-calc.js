@@ -16,6 +16,7 @@ const getRightAnswer = (randNum1, operator, randNum2) => {
       return randNum1 * randNum2;
     default:
   }
+  return false;
 };
 
 const getGameData = () => {
