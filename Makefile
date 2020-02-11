@@ -3,12 +3,8 @@ install:
 install-deps:
 	npm install
 start:
-	npx babel-node src/bin/brain-calc.js
+	npx babel-node src/bin/brain-gcd.js
 publish:
 	npm publish --dry-run
-edit:
-	vim ./src/bin/brain-games.js
-edit1:
-	vim ./src/bin/brain-even.js
 lint:
 	npx eslint .
