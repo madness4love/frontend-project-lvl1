@@ -14,7 +14,7 @@ export default (gameDataPair, rule) => {
     const isQuestion = car(gameData);
     const isRightAnswer = cdr(gameData);
 
-    console.log(`Question ${isQuestion}`);
+    console.log(`Question: ${isQuestion}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (String(userAnswer) === String(isRightAnswer)) {
