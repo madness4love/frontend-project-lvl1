@@ -1,18 +1,26 @@
-name: CI
+name: Node CI
 
-on: [push]
+on:
+  - push
+  - pull_request
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [13.x]
+
     steps:
-    - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        make lint
-        echo Add other actions to build,
-        echo test, and deploy your project.
+      - name: Run linter
+        run: |
+          make lint
+      - name: Test & publish code coverage
+        uses: paambaati/codeclimate-action@v2.4.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageCommand: make test-coverage
+          debug: true
