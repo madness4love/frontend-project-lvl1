@@ -3,17 +3,20 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
 
+Asciinema install the package
+https://asciinema.org/a/smseoeKEDL8A8AH8h53n8oKBB
+
 Asciinema brain-even
-https://asciinema.org/a/wQ76Int3yVw5KA053PkSoifem
+https://asciinema.org/a/lQDizZW8py9ufGUpPGll5JsOw
 
 Asciinema brain-calc
-https://asciinema.org/a/y1kzmo2F6zK5zTc8w9WjlledD 
+https://asciinema.org/a/4efwmQ8V7I6C5dO5d7jZQD92f
 
 Asciinema brain-gcd
-https://asciinema.org/a/Oi1MG8NZ4ZgTcUV5Y3OURl9tf
+https://asciinema.org/a/jRro8eu0qAjWwkatGmYxoaHRt
 
 Asciinema brain-progression
-https://asciinema.org/a/SZER6jnA5HitXoS54NKTvM3rQ
+https://asciinema.org/a/c5IZF65sM1uewOOztQyTskYNO
 
 Asciinema brain-prime
-https://asciinema.org/a/dwtJyKOysdCg2iaahDrRaA0DL
+https://asciinema.org/a/IVP9ELpirwHaaRSgjipILvnC3

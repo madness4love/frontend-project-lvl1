@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import { cons } from '@hexlet/pairs';
-import getRandomNum from '../common-func/randomNum';
-import game from '..';
-
+import getRandomNum from '../../common-func/randomNum';
+import startGame from '../..';
 
 const rule = 'Find the greatest common divisor of given numbers.';
+
 const getRightAnswer = (n1, n2) => {
   const geatestNum = Math.max(n1, n2);
   const smallestNum = Math.min(n1, n2);
@@ -20,9 +20,9 @@ const getGameData = () => {
   const randNum1 = getRandomNum(100);
   const randNum2 = getRandomNum(50);
 
-  const isCorrectAnswer = getRightAnswer(randNum1, randNum2);
-  const isQuestion = `${randNum1} ${randNum2}`;
-  return cons(isQuestion, isCorrectAnswer);
+  const rightAnswer = getRightAnswer(randNum1, randNum2);
+  const question = `${randNum1} ${randNum2}`;
+  return cons(question, rightAnswer);
 };
 
-game(getGameData, rule);
+startGame(getGameData, rule);

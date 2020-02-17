@@ -11,16 +11,16 @@ export default (gameDataPair, rule) => {
 
   for (let i = 1; i <= 3; i += 1) {
     const gameData = gameDataPair();
-    const isQuestion = car(gameData);
-    const isRightAnswer = cdr(gameData);
+    const question = car(gameData);
+    const rightAnswer = cdr(gameData);
 
-    console.log(`Question: ${isQuestion}`);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (String(userAnswer) === String(isRightAnswer)) {
+    if (String(userAnswer) === String(rightAnswer)) {
       console.log('Correct!');
     } else {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${isRightAnswer}.\nLet's try again, ${userName}!`);
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${userName}!`);
       return;
     }
   }

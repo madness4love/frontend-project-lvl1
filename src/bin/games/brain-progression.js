@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { cons } from '@hexlet/pairs';
-import getRandomNum from '../common-func/randomNum';
-import game from '..';
+import getRandomNum from '../../common-func/randomNum';
+import startGame from '../..';
 
 const rule = 'What number is missing in the progression?';
 
@@ -25,7 +25,7 @@ const getRightAnswer = (string) => {
   let answer = '';
   const index = getRandomNum(isProgression.length - 1);
 
-  const getStartPosition = (n) => {
+  const getStartPositionAndAnswer = (n) => {
     let position = isProgression[n];
     let i = n;
     if (position === ' ') {
@@ -39,10 +39,10 @@ const getRightAnswer = (string) => {
         answer += position;
       }
     }
-    return getStartPosition(i + 1);
+    return getStartPositionAndAnswer(i + 1);
   };
 
-  getStartPosition(index);
+  getStartPositionAndAnswer(index);
   return answer;
 };
 
@@ -51,9 +51,9 @@ const getGameData = () => {
   const randNum2 = getRandomNum(50);
   const progression = getProgression(randNum1, randNum2);
 
-  const isCorrectAnswer = getRightAnswer(progression);
-  const isQuestion = progression.replace(isCorrectAnswer, '..');
-  return cons(isQuestion, isCorrectAnswer);
+  const rightAnswer = getRightAnswer(progression);
+  const question = progression.replace(rightAnswer, '..');
+  return cons(question, rightAnswer);
 };
 
-game(getGameData, rule);
+startGame(getGameData, rule);
