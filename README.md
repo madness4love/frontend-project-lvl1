@@ -1,5 +1,6 @@
 # frontend-project-lvl1
 
+[![CI](https://github.com/madness4love/frontend-project-lvl1/workflows/CI/badge.svg)](github.com/madness4love/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
 
