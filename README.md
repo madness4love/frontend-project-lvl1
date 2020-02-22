@@ -4,8 +4,8 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
 
-Asciinema install the package
-https://asciinema.org/a/smseoeKEDL8A8AH8h53n8oKBB
+install the package
+[![asciicast](https://asciinema.org/a/smseoeKEDL8A8AH8h53n8oKBB.svg)](https://asciinema.org/a/smseoeKEDL8A8AH8h53n8oKBB)
 
 Asciinema brain-even
 https://asciinema.org/a/lQDizZW8py9ufGUpPGll5JsOw
