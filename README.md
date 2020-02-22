@@ -1,23 +1,22 @@
 # frontend-project-lvl1
 
-[![CI](https://github.com/madness4love/frontend-project-lvl1/workflows/Node20%CI/badge.svg)](github.com/madness4love/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
 
 install the package
 [![asciicast](https://asciinema.org/a/smseoeKEDL8A8AH8h53n8oKBB.svg)](https://asciinema.org/a/smseoeKEDL8A8AH8h53n8oKBB)
 
-Asciinema brain-even
-https://asciinema.org/a/lQDizZW8py9ufGUpPGll5JsOw
+brain-even
+[![asciicast](https://asciinema.org/a/lQDizZW8py9ufGUpPGll5JsOw.svg)](https://asciinema.org/a/lQDizZW8py9ufGUpPGll5JsOw)
 
-Asciinema brain-calc
-https://asciinema.org/a/4efwmQ8V7I6C5dO5d7jZQD92f
+brain-calc
+[![asciicast](https://asciinema.org/a/4efwmQ8V7I6C5dO5d7jZQD92f.svg)](https://asciinema.org/a/4efwmQ8V7I6C5dO5d7jZQD92f)
 
-Asciinema brain-gcd
-https://asciinema.org/a/jRro8eu0qAjWwkatGmYxoaHRt
+brain-gcd
+[![asciicast](https://asciinema.org/a/jRro8eu0qAjWwkatGmYxoaHRt.svg)](https://asciinema.org/a/jRro8eu0qAjWwkatGmYxoaHRt)
 
-Asciinema brain-progression
-https://asciinema.org/a/c5IZF65sM1uewOOztQyTskYNO
+brain-progression
+[![asciicast](https://asciinema.org/a/c5IZF65sM1uewOOztQyTskYNO.svg)](https://asciinema.org/a/c5IZF65sM1uewOOztQyTskYNO)
 
-Asciinema brain-prime
-https://asciinema.org/a/IVP9ELpirwHaaRSgjipILvnC3
+brain-prime
+[![asciicast](https://asciinema.org/a/IVP9ELpirwHaaRSgjipILvnC3.svg)](https://asciinema.org/a/IVP9ELpirwHaaRSgjipILvnC3)
