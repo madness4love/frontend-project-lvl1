@@ -1,7 +1,7 @@
 install:
 	install-deps
 install-deps:
-	npm install
+	npm ci
 start:
 	npx babel-node src/bin/brain-prime.js
 publish:
