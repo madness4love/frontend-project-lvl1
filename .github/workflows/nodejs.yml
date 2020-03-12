@@ -2,36 +2,15 @@ name: Node CI
 
 on:
   - push
-  - pull_request
 
 jobs:
-  build:
+  checkCodestyle:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [13.x]
-
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm install, build
-        run: |
-          make install
-          make build
-        env:
-          CI: true
+      - name: clone repo
+        uses: actions/checkout@v1
+      
       - name: Run linter
-        run: |
-          make lint
-      - name: Test & publish code coverage
-        uses: paambaati/codeclimate-action@v2.4.0
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-        with:
-          coverageCommand: make test-coverage
-          debug: true
+        run: make lint
