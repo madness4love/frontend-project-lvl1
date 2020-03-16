@@ -2,9 +2,7 @@
 
 [![Linter](https://github.com/madness4love/frontend-project-lvl1/workflows/Linter/badge.svg)](https://github.com/madness4love/frontend-project-lvl1/actions)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/madness4love/frontend-project-lvl1/maintainability)
 
 install the package
 [![asciicast](https://asciinema.org/a/smseoeKEDL8A8AH8h53n8oKBB.svg)](https://asciinema.org/a/smseoeKEDL8A8AH8h53n8oKBB)
