@@ -1,24 +1,12 @@
 import { cons } from '@hexlet/pairs';
-import { getRandomNum, identity } from '../utils';
+import { getRandomNum } from '../utils';
 
 export default () => {
-  const getRandomOperand = () => {
-    const randomNum = () => Math.random() * 10;
-
-    let index = identity(randomNum());
-    if (index < 4 || index === 0) {
-      index = '+';
-    } else if (index >= 4 && index < 7) {
-      index = '-';
-    } else {
-      index = '*';
-    }
-    return index;
-  };
+  const randomOperator = ['+', '-', '*'];
 
   const randNum1 = getRandomNum(1, 15);
   const randNum2 = getRandomNum(2, 20);
-  const operator = getRandomOperand();
+  const operator = randomOperator[getRandomNum(0, 2)];
 
   const getRightAnswer = (num1, oper, num2) => {
     switch (oper) {
