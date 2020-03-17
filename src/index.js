@@ -8,8 +8,9 @@ export default (gameDataPair, rule) => {
   const userName = readlineSync.question('May i have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('');
+  const number0fRounds = 3;
 
-  for (let i = 1; i <= 3; i += 1) {
+  for (let i = 1; i <= number0fRounds; i += 1) {
     const gameData = gameDataPair();
     const question = car(gameData);
     const rightAnswer = cdr(gameData);
