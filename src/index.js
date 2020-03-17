@@ -18,7 +18,7 @@ export default (gameDataPair, rule) => {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (String(userAnswer) === String(rightAnswer)) {
+    if (userAnswer === String(rightAnswer)) {
       console.log('Correct!');
     } else {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${userName}!`);
