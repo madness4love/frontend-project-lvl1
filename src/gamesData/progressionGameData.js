@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { getRandomNum } from '../utils';
+import getRandomNum from '../utils';
 
 export default () => {
   const getProgression = (start, step) => {
