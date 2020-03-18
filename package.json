@@ -34,7 +34,8 @@
     "loadsh": "0.0.4",
     "readline-sync": "^1.4.10",
     "sloc": "^0.2.1",
-    "source-map": "^0.7.3"
+    "source-map": "^0.7.3",
+    "source-map-support": "^0.5.16"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
