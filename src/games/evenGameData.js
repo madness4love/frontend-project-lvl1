@@ -15,7 +15,6 @@ const getAnswer = (num) => {
   }
 };
 
-
 const getGameData = () => {
   const randomNum = getRandomNum(1, 100);
 
