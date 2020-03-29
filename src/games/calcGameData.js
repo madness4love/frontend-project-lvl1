@@ -19,10 +19,11 @@ const getRightAnswer = (num1, oper, num2) => {
 
 const getGameData = () => {
   const randomOperator = ['+', '-', '*'];
+  const length = randomOperator.length - 1;
 
   const randNum1 = getRandomNum(1, 15);
   const randNum2 = getRandomNum(2, 20);
-  const operator = randomOperator[getRandomNum(0, 2)];
+  const operator = randomOperator[getRandomNum(0, length)];
 
   const rightAnswer = getRightAnswer(randNum1, operator, randNum2);
   const question = `${randNum1} ${operator} ${randNum2}`;
