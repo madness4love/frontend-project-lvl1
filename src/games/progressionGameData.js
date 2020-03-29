@@ -1,7 +1,10 @@
 import { cons } from '@hexlet/pairs';
 import getRandomNum from '../utils';
+import getGameEngine from '..';
 
-export default () => {
+const rule = 'What number is missing in the progression?';
+
+const getGameData = () => {
   const getProgression = (start, step) => {
     let result = String(start);
     let index = 10;
@@ -51,3 +54,5 @@ export default () => {
   const question = progression.replace(rightAnswer, '..');
   return cons(question, rightAnswer);
 };
+
+export default () => getGameEngine(getGameData, rule);

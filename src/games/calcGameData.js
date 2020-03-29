@@ -1,7 +1,10 @@
 import { cons } from '@hexlet/pairs';
 import getRandomNum from '../utils';
+import getGameEngine from '..';
 
-export default () => {
+const rule = 'What is the result of the expression?';
+
+const getGameData = () => {
   const randomOperator = ['+', '-', '*'];
 
   const randNum1 = getRandomNum(1, 15);
@@ -25,3 +28,5 @@ export default () => {
   const question = `${randNum1} ${operator} ${randNum2}`;
   return cons(question, rightAnswer);
 };
+
+export default () => getGameEngine(getGameData, rule);
