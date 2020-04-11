@@ -2,7 +2,7 @@
   "name": "frontend-project-lvl1",
   "version": "1.0.0",
   "description": "brain games project",
-  "main": "index.js",
+  "main": "src/index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
@@ -31,11 +31,10 @@
   "homepage": "https://github.com/madness4love/frontend-project-lvl1#readme",
   "dependencies": {
     "@hexlet/pairs": "^1.0.11",
-    "loadsh": "0.0.4",
     "readline-sync": "^1.4.10",
-    "sloc": "^0.2.1",
     "source-map": "^0.7.3",
-    "source-map-support": "^0.5.16"
+    "source-map-support": "^0.5.16",
+    "lodash": "^4.17.14"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
