@@ -4,8 +4,8 @@ import getGameEngine from '..';
 
 const rule = 'What is the result of the expression?';
 
-const getRightAnswer = (num1, oper, num2) => {
-  switch (oper) {
+const getRightAnswer = (num1, num2, operator) => {
+  switch (operator) {
     case '+':
       return num1 + num2;
     case '-':
@@ -25,7 +25,7 @@ const getGameData = () => {
   const randNum2 = getRandomNum(2, 20);
   const operator = randomOperator[getRandomNum(0, length)];
 
-  const rightAnswer = getRightAnswer(randNum1, operator, randNum2);
+  const rightAnswer = getRightAnswer(randNum1, randNum2, operator);
   const question = `${randNum1} ${operator} ${randNum2}`;
   return cons(question, rightAnswer);
 };
