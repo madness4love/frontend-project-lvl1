@@ -22,7 +22,7 @@ const getGameData = () => {
   const hideElementPosition = getRandomNum(1, countOfDigitInProgression);
   const progression = getProgression(startDigit, step);
 
-  const rightAnswer = startDigit + step * hideElementPosition;
+  const rightAnswer = String(startDigit + step * hideElementPosition);
   const question = progression.replace(rightAnswer, '..');
   return cons(question, rightAnswer);
 };

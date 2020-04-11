@@ -21,7 +21,7 @@ const getGameData = () => {
   const randNum1 = getRandomNum(10, 100);
   const randNum2 = getRandomNum(5, 50);
 
-  const rightAnswer = getGcd(randNum1, randNum2);
+  const rightAnswer = String(getGcd(randNum1, randNum2));
   const question = `${randNum1} ${randNum2}`;
   return cons(question, rightAnswer);
 };

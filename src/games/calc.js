@@ -25,7 +25,7 @@ const getGameData = () => {
   const randNum2 = getRandomNum(2, 20);
   const operator = arrayOfOperator[getRandomNum(0, lastIndexOfArray)];
 
-  const rightAnswer = getRightAnswer(randNum1, randNum2, operator);
+  const rightAnswer = String(getRightAnswer(randNum1, randNum2, operator));
   const question = `${randNum1} ${operator} ${randNum2}`;
   return cons(question, rightAnswer);
 };
