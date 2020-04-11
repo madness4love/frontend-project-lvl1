@@ -6,19 +6,10 @@ const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = num => num % 2 === 0;
 
-const getAnswer = (num) => {
-  switch (isEven(num)) {
-    case true:
-      return 'yes';
-    default:
-      return 'no';
-  }
-};
-
 const getGameData = () => {
   const randomNum = getRandomNum(1, 100);
 
-  const rightAnswer = getAnswer(randomNum);
+  const rightAnswer = isEven(randomNum) ? 'yes' : 'no';
 
   return cons(randomNum, rightAnswer);
 };
