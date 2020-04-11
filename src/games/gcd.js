@@ -4,17 +4,6 @@ import getGameEngine from '..';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-/* const getRightAnswer = (n1, n2) => {
-  const geatestNum = Math.max(n1, n2);
-  const smallestNum = Math.min(n1, n2);
-  const result = geatestNum % smallestNum;
-
-  if (result === 0) {
-    return smallestNum;
-  }
-  return getRightAnswer(smallestNum, result);
-}; */
-
 const getGcd = (n1, n2) => {
   const geatestNum = Math.max(n1, n2);
   const smallestNum = Math.min(n1, n2);
