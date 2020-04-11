@@ -30,11 +30,11 @@
   },
   "homepage": "https://github.com/madness4love/frontend-project-lvl1#readme",
   "dependencies": {
-    "@hexlet/pairs": "^1.0.11",
+    "@hexlet/pairs": "^1.0.14",
+    "lodash": "^4.17.14",
     "readline-sync": "^1.4.10",
     "source-map": "^0.7.3",
-    "source-map-support": "^0.5.16",
-    "lodash": "^4.17.14"
+    "source-map-support": "^0.5.16"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
