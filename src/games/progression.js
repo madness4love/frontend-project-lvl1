@@ -4,12 +4,12 @@ import getGameEngine from '..';
 
 const rule = 'What number is missing in the progression?';
 
-const countOfDigitInProgression = 10;
+const progressionLength = 10;
 
 const getProgression = (start, step) => {
   let result = String(start);
 
-  for (let index = 1; index < countOfDigitInProgression; index += 1) {
+  for (let index = 1; index < progressionLength; index += 1) {
     const nextNumber = start + step * index;
     result = `${result} ${nextNumber}`;
   }
@@ -19,7 +19,7 @@ const getProgression = (start, step) => {
 const getGameData = () => {
   const startDigit = getRandomNum(1, 100);
   const step = getRandomNum(2, 50);
-  const hideElementPosition = getRandomNum(1, countOfDigitInProgression);
+  const hideElementPosition = getRandomNum(1, progressionLength);
   const progression = getProgression(startDigit, step);
 
   const rightAnswer = String(startDigit + step * hideElementPosition);

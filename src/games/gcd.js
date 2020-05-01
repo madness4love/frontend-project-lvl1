@@ -1,20 +1,18 @@
-import { cons, cdr, car } from '@hexlet/pairs';
+import { cons } from '@hexlet/pairs';
 import getRandomNum from '../utils';
 import getGameEngine from '..';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = (n1, n2) => {
-  const geatestNum = Math.max(n1, n2);
+  const greatestNum = Math.max(n1, n2);
   const smallestNum = Math.min(n1, n2);
-
-  const pairOfNumbers = cons(geatestNum, smallestNum);
-  const result = car(pairOfNumbers) % cdr(pairOfNumbers);
+  const result = greatestNum % smallestNum;
 
   if (result === 0) {
-    return cdr(pairOfNumbers);
+    return smallestNum;
   }
-  return getGcd(cdr(pairOfNumbers), result);
+  return getGcd(smallestNum, result);
 };
 
 const getGameData = () => {
