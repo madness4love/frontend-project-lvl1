@@ -5,11 +5,11 @@ import getGameEngine from '..';
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
-  const halfOfNum = Math.ceil(num / 2);
-
-  if (num === 0 || num === 1) {
+  if (num <= 2) {
     return false;
   }
+  
+  const halfOfNum = Math.ceil(num / 2);
 
   for (let div = 2; div <= halfOfNum; div += 1) {
     if (num % div === 0) {
