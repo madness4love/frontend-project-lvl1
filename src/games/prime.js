@@ -8,7 +8,7 @@ const isPrime = (num) => {
   if (num <= 2) {
     return false;
   }
-  
+
   const halfOfNum = Math.ceil(num / 2);
 
   for (let div = 2; div <= halfOfNum; div += 1) {
